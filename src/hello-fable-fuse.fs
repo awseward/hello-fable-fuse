@@ -4,10 +4,10 @@ open Fuse
 open Fable.Import
 open Fable.Import.Fetch
 
-module hello-fable-fuse =
-    let data = Observable.create()
+module HelloFableFuse =
+  let data = Observable.create()
 
-    promise {
-        let! req = GlobalFetch.fetch (Url "http://az664292.vo.msecnd.net/files/ZjPdBhWNdPRMI4qK-colors.json")
-        let! json = req.json ()
-        do (data.value <- json) } |> ignore
+  promise {
+    let! req = GlobalFetch.fetch (Url "http://az664292.vo.msecnd.net/files/ZjPdBhWNdPRMI4qK-colors.json")
+    let! json = req.json ()
+    do (data.value <- json) } |> ignore
