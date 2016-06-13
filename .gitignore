@@ -30,3 +30,6 @@ tmp
 # Users Environment Variables
 .lock-wscript
 App/js
+
+# Custom
+App/build/
