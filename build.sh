@@ -1,0 +1,1 @@
+fable --module=commonjs --outDir=../App/js/ src/hello-fable-fuse.fsproj --coreLib ./fable-core.js --copyExt -w
